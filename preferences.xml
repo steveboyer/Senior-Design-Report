@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <EditTextPreference
+        android:key="@string/key_pref_ip"
+        android:title="@string/pref_ip"
+        android:summary="@string/pref_ip_summ"
+        android:defaultValue="@string/pref_ip_default"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+    <EditTextPreference
+        android:key="@string/key_pref_port"
+        android:title="@string/pref_port"
+        android:summary="@string/pref_port_summ"
+        android:defaultValue="@string/pref_port_default"
+        android:layout_height="wrap_content" />
+    <EditTextPreference
+        android:key="@string/key_pref_pass"
+        android:title="@string/pref_pass"
+        android:summary="@string/pref_pass_summ"
+        android:defaultValue="@string/pref_pass_default"
+        android:layout_height="wrap_content" />
+    <EditTextPreference
+        android:key="@string/key_pref_user"
+        android:title="@string/pref_user"
+        android:summary="@string/pref_user_summ"
+        android:defaultValue="@string/pref_user_default"
+        android:layout_height="wrap_content" />
+    <CheckBoxPreference
+        android:key="@string/key_pref_reset_buttons"
+        android:title="@string/pref_reset_buttons"
+        android:summary=""
+        android:defaultValue="false"
+        android:layout_height="wrap_content" />
+    <ListPreference
+        android:key="pref_fav_button"
+        android:title="@string/pref_fav_button"
+        android:summary="" />
+    <CheckBoxPreference
+        android:key="button_0_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_1_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_2_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_3_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_4_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_5_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_6_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_7_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_8_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_9_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_chanm_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_chanp_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_power_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_volm_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_volp_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_mute_programmed"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="button_source_programmed"
+        android:defaultValue="false" />
+</PreferenceScreen>

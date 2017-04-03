@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% File: uwyo_report.sty
+%%% =============================================
+%%% This file defines macros and parameters used for preparing reports
+%%% for Dr. Wright's courses at the University of Wyoming using LaTeX2e.
+%%% There is no guarantee given or implied that it will meet all your 
+%%% particular requirements, but is should come very close. 
+%%% Only minor adjustments in the TeX file should be needed to meet all
+%%% requirements. In most cases this style file should *never* need 
+%%% modification; all changes should be done via the TeX file.
+%%%
+%%% This file is typically distributed with a skeletal
+%%% LaTeX file "uwyo_report_sample.tex" that provides a sample structure 
+%%% of a report and provides an example of how to use this package.
+%%%
+%%% Author: Cameron H. G. Wright, ECE Dept, University of Wyoming
+%%% Copyright (c) 2007 for all files in this distribution.
+%%%
+%%% This file is free and can be modified or distributed as long as
+%%% you meet the following conditions:
+%%%
+%%% (1) This copyright notice is kept intact on all modified copies.
+%%% (2) If you modify this file, you MUST NOT use the original file name.
+%%%
+%%%
+%%% Usage:
+%%% ======
+%%%
+%%% This file must be loaded as a package in the main document preamble.
+%%% Note that we don't use the LaTeX "report" class for such a short document.
+%%% This is how it should look:
+%%%
+%%% \documentclass[12pt]{article} 
+%%% \usepackage{uwyo_report}
+%%%
+%%% You can also include other packages if you want, such as:
+%%% \usepackage{amsmath}  % loads extra math symbols
+%%% \usepackage{amssymb}  % also loads amsfonts
+%%% \usepackage{subfigure} % places multiple EPS files in one figure
+%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}[1998/06/01]
+\def\filedate{Feb 09}
+\def\fileyear{2007}
+\def\fileversion{1.1} 
+\ProvidesPackage{uwyo_report}
+
+
+\usepackage{graphicx} % allows figures to be used
+% \usepackage{fancyhdr} % gives better control over headers and footers
+\usepackage{cite} % compress in-text reference ranges
+\usepackage{url}  % allow easy use of web addresses, pathnames, etc.
+\usepackage{listings}  % for pretty printing of program code
+\usepackage{color} % allow colors and grayscales to be defined 
+
+
+%%% set up listings package for program listings %%%%%%%%%%%%%
+%%% note syntax changes needed from ver 0.21 to ver 1.0 of listings.sty
+\lstloadlanguages{Java, C++, Matlab, Python, XML}%
+\definecolor{lightgray}{rgb}{0.9,0.9,0.9} % from the color package
+\lstset{numbers=left,%  new command to get line numbers
+        numberstyle=\tiny,% new version of labelstyle
+        stepnumber=2,% new version of labelstep
+        numbersep=5pt,% new version of labelsep
+        commentstyle=\ttfamily,%
+        identifierstyle=\ttfamily,%
+        stringstyle=\ttfamily,%
+        backgroundcolor=\color{lightgray},% using new syntax for color
+        breaklines=true,%
+        postbreak={[+]},% this works with all fonts in listings
+        language=Java}% default language
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% adjust page margin parameters 
+ \setlength{\oddsidemargin}{0.0in}  % uses a 1-inch left margin for odd-numbered pages
+ \setlength{\evensidemargin}{0.0in} % uses a 1-inch left margin for even-numbered pages (if two-sided)
+ \setlength{\textwidth}{6.5in}      % results in a 1-inch right margin
+ \setlength{\topmargin}{0.0in}
+ \setlength{\headheight}{0.0in}
+ \setlength{\headsep}{0.0in}
+ \setlength{\textheight}{9.0in}
